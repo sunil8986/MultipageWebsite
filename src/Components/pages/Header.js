@@ -9,16 +9,18 @@ import "./Header.css"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ServiceDetail from './ServiceDetail';
+import Error from './Error';
 
 const Header = () => {
   return (
     <>  
 
-        <Container fluid className='header'>
+        <Container className='header'>
           <Row className="align-items-center menu px-10"> 
             <Col md="auto">
               <NavLink to="/" end>
-                <img src="./img/logo.png" alt="Logo" />
+                <img src="../img/logo.png" alt="Logo" />
               </NavLink>
             </Col>
             <Col>
@@ -37,6 +39,8 @@ const Header = () => {
             <Route path="/About" element={<Aboutus />} />
             <Route path="/Services" element={<Services />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/services/:id" element={<ServiceDetail />} />
+            <Route path="*" element={<Error />} />
         </Routes>
     </>
   )

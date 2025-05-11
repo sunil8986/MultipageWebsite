@@ -5,12 +5,12 @@ import { Col, Container, Row } from 'react-bootstrap'
 const Home = () => {
   return (
     <>
-      <HeroBanner
-        image="./img/home1.svg"
-        title="Creative and Quality is Our Services"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
-        linkText="About us"
-        linkUrl="/About"
+      <HeroBanner pageKey="home"
+        // image="./img/home1.svg"
+        // title="Creative and Quality is Our Services"
+        // description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+        // linkText="About us"
+        // linkUrl="/About"
       />
 
       <Container>
