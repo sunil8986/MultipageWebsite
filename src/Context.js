@@ -78,23 +78,23 @@ const Context = ({children}) => {
 
     let heroData = {
         home: {
-            image: '../img/home1.svg',
+            image: '../img/2.png',
             title: 'Creative and Quality is Our Services',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-            linkText: 'Home',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+            linkText: 'Get Started',
             linkUrl: '/'
         },
         about: {
-            image: '../img/home2.svg',
-            title: 'Who We Are',
-            description: 'Learn more about our journey and our mission.',
-            linkText: 'Contact us',
+            image: '../img/1.jpg',
+            title: 'About us',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
+            linkText: 'Get Started',
             linkUrl: '/contact'
         },
         service: {
-            image: '../img/home2.svg',
+            image: '../img/3.png',
             title: 'Our Services',
-            description: 'Explore the wide range of services we offer.',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
             linkText: 'Get Started',
             linkUrl: '/contact'
         }

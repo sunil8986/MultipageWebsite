@@ -10,13 +10,13 @@ const Footer = () => {
             <section className="contact-short">
                 <div className="grid grid-two-column">
                     <div>
-                        <h3>Ready to get started?</h3>
-                        <h3>Talk to us today</h3>
+                        <p>Ready to get started?</p>
+                        <p>Talk to us today</p>
                     </div>
 
                     <div className="contact-short-btn">
                         <NavLink to="/">
-                            <Button>Get Started</Button>
+                            <Button>Contact Us</Button>
                         </NavLink>
                     </div>
                 </div>
@@ -39,8 +39,9 @@ const Footer = () => {
                                 required
                                 autoComplete="off"
                                 placeholder="Email"
+                                className="form-control"
                             />
-                            <input type="submit" value="Subscribe" />
+                            <input type="submit" value="Subscribe" className="btn" />
                         </form>
                     </div>
 
@@ -60,18 +61,17 @@ const Footer = () => {
                     </div>
                     <div className="footer-contact">
                         <h3>Call Us</h3>
-                        <h3>+91 9625020036</h3>
+                        <p>+91 96******36</p>
                     </div>
                 </div>
 
                 {/* bottom section  */}
                 <div className="footer-bottom--section">
-                    <hr />
+                    
                     <div className="container grid grid-two-column">
-                        <p>@{new Date().getFullYear()} Sunil Sharma. All Rights Reserved</p>
+                        <p>@{new Date().getFullYear()} S S. All Rights Reserved</p>
                         <div>
-                            <p>PRIVACY POLICY</p>
-                            <p>TERMS & CONDITIONS</p>
+                            <p>Privacy Policy | Terms & Conditions</p>
                         </div>
                     </div>
                 </div>

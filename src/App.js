@@ -6,10 +6,8 @@ import Footer from './Components/pages/Footer';
 function App() {
   return (
     <>
-      <header>
-          <Header />
-          <Footer />
-      </header>
+      <Header />
+      <Footer />
     </>
   );
 }

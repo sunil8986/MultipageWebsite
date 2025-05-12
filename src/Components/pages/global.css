@@ -1,35 +1,37 @@
 #herobanner {
     padding: 30px 20px;
-    background-color: #ffffff;
+    background-color: #08001a;
     display: flex;
     align-items: center;
     font-family: "Poppins", sans-serif;
-    
-  }
-  
-  #herobanner img {
-    height: 450px;
-  }
-  
-  .bannertext{
-    padding-top: 0px;
-  }
+    position: relative;
+    min-height: 600px;
+    display: flex !important;
+}
 
-  #herobanner h1 {
+#herobanner img {
+    height: auto;
+}
+
+.bannertext {
+    padding-top: 0px;
+}
+
+#herobanner h1 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #343a40;
-    text-transform:uppercase
-  }
-  
-  #herobanner p {
+    color: #fff;
+    text-transform: uppercase
+}
+
+#herobanner p {
     font-size: 1rem;
-    color: #6c757d;
+    color: #8b8b8b;
     margin-bottom: 30px;
-  }
-  
-  #herobanner a {
+}
+
+#herobanner a {
     display: inline-block;
     padding: 10px 25px;
     background-color: #6b28f5;
@@ -37,11 +39,26 @@
     text-decoration: none;
     border-radius: 0px;
     transition: background-color 0.3s ease;
-  }
-  
-  #herobanner a:hover {
-    background-color: #4d00eb;
-  }
+}
+
+.half-banner-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block !important;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px; 
+    color: #333;
+}
 
 /* Services.css */
 .card {
@@ -55,7 +72,7 @@
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 20px;
-  margin: 0 10px 30px;
+  margin:10px 0;
   position: relative;
 }
 
@@ -128,7 +145,7 @@
   max-width: 100%;  
 }
 
-.read-more-btn:hover {
+.read-more-btn:hover, .form-box .btn:hover, #herobanner a:hover {
   background-color: #4d00eb;
 }
 
@@ -136,7 +153,7 @@
 
 
 .form-wrapper {
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 40px 0;
   }
   
@@ -153,12 +170,17 @@
   }
   
   .form-box .form-control {
-    border-radius: 4px;
+    border-radius: 0px;
+    padding: .975rem .75rem;
   }
   
   .form-box .btn {
     margin-top: 0%;
     padding: 5px 30px ;
+    background-color: #6b28f5;
+    border-radius: 0px;
+    padding: 10px 0;
+    font-size: 18px;
   }
   
 
@@ -167,18 +189,34 @@
   /* Footer wrapper */
 #footer {
     width: 100%;
-    background-color: #0a0a0a;
+    background-color: #08001a;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 100px;
+    margin-top: 150px;
   }
   
+#footer h3{
+    font-size: 1.1rem;
+}
+
+footer p{
+    color: #8b8b8b;
+}
   /* Aligns the .contact-short section */
   .contact-short {
-    background: #292929;
-    padding: 30px 40px;
-    border-radius: 10px;
+    background: #ffffff;
+    padding: 40px 40px;
+    border-radius: 0px;
     margin-bottom: 40px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    margin-top: -180px;
+    color: #333;
+    font-size: 16px;
+  }
+
+  .contact-short p{
+    margin: auto;
+    font-size: 24px;
   }
   
   /* Grid two columns: Text + Button */
@@ -194,18 +232,22 @@
     text-decoration: none;
   }
   
-  .contact-short-btn button {
-    background-color: #fff;
-    color: #000;
+  .contact-short-btn button, .quote-content button {
+    background-color: #6b28f5;
+    color: #fff;
     font-weight: 600;
     padding: 10px 25px;
     border: none;
-    border-radius: 6px;
+    border-radius: 0px;
     cursor: pointer;
   }
   
-  .contact-short-btn button:hover {
-    background-color: #ddd;
+  .contact-short-btn button:hover,.footer-subscribe .btn,  .footer-subscribe input[type="submit"]:hover,   .quote-content button:hover {
+    background-color: #4d00eb;
+  }
+
+  .contact-short-btn:active{
+    background-color: #4d00eb !important;
   }
   
   /* Footer Section */
@@ -232,7 +274,7 @@
   .footer-subscribe input[type="email"] {
     padding: 8px;
     border: none;
-    border-radius: 4px;
+    border-radius: 0px;
     margin-right: 8px;
     width: 100%;
     max-width: 220px;
@@ -242,14 +284,10 @@
     padding: 8px 16px;
     margin-top: 10px;
     border: none;
-    border-radius: 4px;
-    background: #fff;
-    color: #000;
+    border-radius: 0px;
+    background-color: #6b28f5;
+    color: #fff;
     cursor: pointer;
-  }
-  
-  .footer-subscribe input[type="submit"]:hover {
-    background: #ccc;
   }
   
   /* Social Icons */
@@ -261,7 +299,7 @@
   .footer-social--icons .icons{
     padding: .5rem;
     border-radius: 50%;
-    border: 2px solid #4d00eb;
+    border: 1px solid #ffffff;
     font-size: 2.4rem;
     position: relative;
     cursor: pointer;
@@ -288,3 +326,274 @@
     gap: 15px;
   }
   
+
+  /**************   Homepage Feature Section   ***************/
+  .feature-section {
+    background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d") center center/cover no-repeat;
+    position: relative;
+    padding: 60px 0;
+    color: white;
+  }
+  
+  .feature-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black overlay */
+    z-index: 1;
+  }
+  
+  .feature-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .info-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    padding: 35px 20px;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .info-box h5 {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .info-box p {
+    color: #eee;
+    font-size: 1rem;
+  }
+
+  .achievements-section {
+    background: none;
+    padding: 80px 0 40px 0;
+  }
+  
+  .achievement-box {
+    background: #fff;
+    border-radius: 0px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .achievement-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .achievement-box h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6b28f5;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-box p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+
+  .process-circle {
+    position: relative;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    padding: 60px 40px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+  }
+
+  .process-circle h4{
+    color: #333;
+  }
+  
+  /* Unique background colors */
+  .circle-1 {
+    background-color: #417ec4; /* blue */
+  }
+  .circle-2 {
+    background-color: #27b1aa; /* green */
+  }
+  .circle-3 {
+    background-color: #ff60c2; /* yellow */
+    color: #fff; /* dark text for contrast */
+  }
+  .circle-4 {
+    background-color: #f3653a; /* red */
+  }
+  
+  .step-icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    color: #0d6efd;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .circle-2 .step-icon {
+    color: #198754;
+  }
+  .circle-3 .step-icon {
+    color: #ffc107;
+  }
+  .circle-4 .step-icon {
+    color: #dc3545;
+  }
+  
+
+  .quote-section {
+    padding:60px 0 80px 0;
+  }
+  
+  .quote-section img {
+    max-width: 100%;
+    border-radius: 0px;
+    border: 1px solid #dddddd;
+    
+  }
+  
+  .quote-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .quote-content p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .quote-content button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+  
+
+  /*********  About us     **********/
+  .about-us-section {
+    background-color: none;
+  }
+  
+  .about-us-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-text p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-section img {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+
+  @media only screen and (max-width: 1800px) {
+    #herobanner {
+        padding: 30px 20px;
+        background-color: #08001a;
+        display: flex;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+        min-height: 500px;
+        display: flex !important;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    #herobanner {
+        padding: 30px 20px;
+        background-color: #08001a;
+        display: flex;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+        min-height: 400px;
+        display: flex !important;
+    }
+    #herobanner h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+        text-transform: uppercase
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #herobanner {
+        padding: 30px 20px;
+        background-color: #08001a;
+        display: flex;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+        min-height: 300px;
+        display: flex !important;
+    }
+    #herobanner h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #fff;
+        text-transform: uppercase
+    }
+    .dnone{
+        display: none !important;   
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        gap: 5px;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        text-align: center;
+    }
+    #footer .grid-four-column{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+    .about-us-section h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-top: 20px;
+        color: #333;
+    }
+  }

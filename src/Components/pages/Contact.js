@@ -14,35 +14,44 @@ const Contact = () => {
         </Row>
       </Container>
 
-      <Container fluid className="form-wrapper">
-      <Row className="justify-content-center align-items-center min-vh-50">
-        <Col md={4}>
-          <div className="form-box">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/xpwdjpww" method="POST">
-              <Form.Group controlId="formName" className="mb-3">
-                <Form.Label>Name</Form.Label>
-                <Form.Control name='UserName' type="text" placeholder="Enter your name" required />
-              </Form.Group>
+      <Container className="form-wrapper my-5">
+        <Row className="align-items-center">
+          {/* Left Column: Form */}
+          <Col md={6}>
+            <div className="form-box">
+              <h1>Contact Us</h1>
+              <form action="https://formspree.io/f/xpwdjpww" method="POST">
+                <Form.Group controlId="formName" className="mb-3">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control name='UserName' type="text" placeholder="Enter your name" required />
+                </Form.Group>
 
-              <Form.Group controlId="formEmail" className="mb-3">
-                <Form.Label>Email</Form.Label>
-                <Form.Control name='Email' type="email" placeholder="Enter your email" required />
-              </Form.Group>
+                <Form.Group controlId="formEmail" className="mb-3">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control name='Email' type="email" placeholder="Enter your email" required />
+                </Form.Group>
 
-              <Form.Group controlId="formMessage" className="mb-3">
-                <Form.Label>Message</Form.Label>
-                <Form.Control name='Message' as="textarea" rows={4} placeholder="Type your message" required />
-              </Form.Group>
+                <Form.Group controlId="formMessage" className="mb-3">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control name='Message' as="textarea" rows={4} placeholder="Type your message" required />
+                </Form.Group>
 
-              <Button variant="primary" type="submit" value="send" className="w-30">
-                Submit
-              </Button>
-            </form>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+                <Button type="submit" className="btn w-100">
+                  Submit
+                </Button>
+              </form>
+            </div>
+          </Col>
+
+          {/* Right Column: Image */}
+          <Col md={6}>
+            <div className="contact-image">
+              <img src="./img/contact.jpg" alt="Contact" className="img-fluid rounded" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
     </>
   )
 }

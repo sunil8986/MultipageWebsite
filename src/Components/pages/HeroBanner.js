@@ -60,7 +60,7 @@ const HeroBanner = ({ pageKey }) => {
       <div className="hero-banner" id='herobanner'>
         <Container>
           <Row className="align-items-center">
-            <Col md={6}>
+            <Col md={6} className='half-banner-img g-0 dnone'>
               <img src={content.image} alt="Hero" className="img-fluid" />
             </Col>
             <Col md={6} className='bannertext'>

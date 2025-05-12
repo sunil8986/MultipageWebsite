@@ -18,9 +18,9 @@ const Header = () => {
 
         <Container className='header'>
           <Row className="align-items-center menu px-10"> 
-            <Col md="auto">
+            <Col md="auto" className='logo'>
               <NavLink to="/" end>
-                <img src="../img/logo.png" alt="Logo" />
+                <img src="../img/logo2.png" alt="Logo" height="100px" />
               </NavLink>
             </Col>
             <Col>
