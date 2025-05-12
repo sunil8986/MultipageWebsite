@@ -78,7 +78,7 @@ const Context = ({children}) => {
 
     let heroData = {
         home: {
-            image: '../img/2.png',
+            image: '../img/2.jpg',
             title: 'Creative and Quality is Our Services',
             description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
             linkText: 'Get Started',
@@ -92,7 +92,7 @@ const Context = ({children}) => {
             linkUrl: '/contact'
         },
         service: {
-            image: '../img/3.png',
+            image: '../img/3.jpg',
             title: 'Our Services',
             description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
             linkText: 'Get Started',
