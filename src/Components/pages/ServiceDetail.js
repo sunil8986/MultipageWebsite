@@ -13,16 +13,30 @@ export default function ServiceDetail() {
 
   return (
 
-    <>
+    <section className="service-detail-section py-5">
       <Container>
-        <Row>
+        <Row className="mb-4">
           <Col>
-            <h1>{service.title}</h1>
-            <img src={service.image_url} alt={service.title} width={400} />
-            <p>{service.text}</p>
+            <h2 className="fw-bold">{service.title}</h2>
+          </Col>
+        </Row>
+
+        <Row className="align-items-center">
+          <Col md={4} className=" mb-4 mb-md-0">
+            <img
+              src={service.image_url}
+              alt={service.title}
+              className="img-fluid shadow-sm"
+            />
+          </Col>
+          <Col md={8}>
+            <div className="service-description">
+              <p className="lead">{service.text}</p>
+              {/* Optional: add more info or CTA here */}
+            </div>
           </Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 }
