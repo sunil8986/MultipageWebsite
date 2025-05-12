@@ -617,4 +617,10 @@ footer p{
     .bannertext{
         padding: 0px !important;
     }
+    .grid-two-column {
+        display: grid;
+        grid-template-columns: max-content;
+        align-items: center;
+        gap: 20px;
+    }
   }
